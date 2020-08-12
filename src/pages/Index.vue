@@ -41,7 +41,7 @@
         <q-btn rounded outline @click="addMoreImages">More</q-btn>
       </div>
 
-      <div v-if="data.length === 0" class="absolute-center">
+      <div v-if="data.length === 0 && searched" class="absolute-center">
         <q-icon name="warning" size="2em" />
         No Data!
       </div>
