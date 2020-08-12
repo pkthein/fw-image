@@ -29,15 +29,13 @@ export default {
   },
   methods: {
     addMoreImages: function () {
-      if (window.scrollY > window.innerHeight) {
-        const oldY = scrollY
+      const oldY = scrollY
 
-        this.slicer += 10
+      this.slicer += 10
 
-        setTimeout(() => {
-          window.scrollTo(0, oldY)
-        }, 200)
-      }
+      setTimeout(() => {
+        window.scrollTo(0, oldY)
+      }, 200)
     },
     searchFilter: function () {
       this.$router.push({
